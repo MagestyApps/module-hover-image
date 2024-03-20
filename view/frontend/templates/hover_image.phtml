@@ -1,0 +1,18 @@
+<?php
+/**
+ * Copyright © MagestyApps. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Magento\Framework\Escaper $escaper */
+?>
+<img class="product-hover-image"
+    <?php foreach ($block->getCustomAttributes() as $name => $value): ?>
+        <?= $escaper->escapeHtmlAttr($name) ?>="<?= $escaper->escapeHtml($value) ?>"
+    <?php endforeach; ?>
+    src="<?= $escaper->escapeUrl($block->getHoverImageUrl()) ?>"
+    loading="lazy"
+    width="<?= $escaper->escapeHtmlAttr($block->getWidth()) ?>"
+    height="<?= $escaper->escapeHtmlAttr($block->getHeight()) ?>"
+    alt="<?= $escaper->escapeHtmlAttr($block->getHoverImageLabel()) ?>"/>

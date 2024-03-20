@@ -1,0 +1,128 @@
+/**
+ * Copyright © MagestyApps. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .product-image-wrapper.has-hover-image {
+        .product-image-photo,
+        .product-hover-image {
+            transition: all .2s linear;
+            position: absolute;
+        }
+
+        &.hover-style {
+            &-slide-left {
+                .product-image-photo {
+                    left: 0;
+                    right: auto;
+                }
+
+                .product-hover-image {
+                    left: 100%;
+                    right: auto;
+                }
+
+                &:hover {
+                    .product-image-photo {
+                        left: -100%;
+                    }
+
+                    .product-hover-image {
+                        left: 0;
+                    }
+                }
+            }
+
+            &-slide-right {
+                .product-image-photo {
+                    left: 0;
+                    right: auto;
+                }
+
+                .product-hover-image {
+                    left: -100%;
+                    right: auto;
+                }
+
+                &:hover {
+                    .product-image-photo {
+                        left: 100%;
+                    }
+
+                    .product-hover-image {
+                        left: 0;
+                    }
+                }
+            }
+
+            &-slide-up {
+                .product-image-photo {
+                    top: 0;
+                    bottom: auto;
+                }
+
+                .product-hover-image {
+                    top: 100%;
+                    bottom: auto;
+                }
+
+                &:hover {
+                    .product-image-photo {
+                        top: -100%;
+                    }
+
+                    .product-hover-image {
+                        top: 0;
+                    }
+                }
+            }
+
+            &-slide-down {
+                .product-image-photo {
+                    top: 0;
+                    bottom: auto;
+                }
+
+                .product-hover-image {
+                    top: -100%;
+                    bottom: auto;
+                }
+
+                &:hover {
+                    .product-image-photo {
+                        top: 100%;
+                    }
+
+                    .product-hover-image {
+                        top: 0;
+                    }
+                }
+            }
+
+            &-fade {
+                .product-image-photo {
+                    opacity: 1;
+                }
+
+                .product-hover-image {
+                    opacity: 0;
+                }
+
+                &:hover {
+                    .product-image-photo {
+                        opacity: 0;
+                    }
+
+                    .product-hover-image {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
