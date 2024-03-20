@@ -1,6 +1,8 @@
 # Magento 2 Product Hover Images
 The module is designed to display alternative image when mouse cursor is hovering a product in product listing
 
+**IMPORTANT:** *if you like the extension, could you please add a star to this GitHub repository in the top right corner. This is really important for us. Thanks.*
+
 ## Installation
 
 ### Using Composer (recommended)
