@@ -1,3 +1,5 @@
+[![Packagist](https://img.shields.io/packagist/v/magestyapps/module-hover-image.svg)](https://packagist.org/packages/magestyapps/module-hover-image)
+
 # Magento 2 Product Hover Images
 The module is designed to display alternative image when mouse cursor is hovering a product in product listing
 
